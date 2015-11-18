@@ -1,0 +1,286 @@
+#logo{
+	margin-left: 42px;
+}
+.search{
+	width: 350px;
+	position: absolute;
+	top: 37px;
+	right: 350px;
+	height: 40px;
+	box-shadow: none ! important;
+}
+.post-button{
+	position: absolute;
+	height: 40px;
+	top: 37px;
+	right: 85px;
+}
+.border{
+	border: 1px #e9e3d6 solid;
+}
+.tag{
+	min-height: 100px;
+	margin-top: 20px;
+	background-color: #FBF9FD;
+	width: 100%;
+	border-bottom:  1px #e9e3d6 solid;
+
+}
+.danhmuc_tag{
+	font-size: 18px;
+	line-height: 40px;
+	color: #777;
+	background-color: #F4F5F4;
+	padding-left: 15px;
+	border-bottom: 1px #e9e3d6 solid;
+	width: 100%;
+}
+.content1{
+	float: right;
+	margin-top: 20px;
+	background-color: #FBF9FD;
+	border-bottom:  1px #e9e3d6 solid;
+}
+.nplr{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#tag-image{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+}
+.margin-top-8{
+	margin-top: 8px;
+}
+.margin-left-15{
+	margin-left: 15px;
+}
+.input-traodoi{
+	width: 40%;
+}
+.login{
+	font-size: 20px;
+}
+.quangcao{
+	padding-left: 0px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border: 1px #e9e3d6 solid;
+	padding-right: 0px;
+	width: 100%;
+}
+.trangthai{
+	width: 120px;
+}
+.margin-right-15{
+	margin-right: 15px;
+}
+.margin-top-15{
+	margin-top: 15px;
+}
+.submit-search{
+	position:absolute;
+	top: 37px;
+	right: 238px;
+	height: 40px;
+}
+.title-post{
+	margin-top: 10px;
+	font-size: 22px;
+}
+.post-content{
+	margin-top: 10px;
+}
+.hidden{
+	display: hidden;
+}
+.border-top{
+	border-top: 1px #e9e3d6 solid;;
+}
+/*modal*/
+.report-modal-header{
+	width: 569px;
+	border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+    color: #5f4d41;
+    font-size: 24px;
+    border: none;
+    border-bottom: 1px solid #e9e3d6;
+    line-height: 54px;
+}
+.background-white{
+	background-color: white;
+}
+.popup-close{
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	top: 0px;
+	right: 0px;
+	background:  url(../image/modal-close-bg.png) no-repeat right bottom !important;
+}
+.suport-popup-close{
+	background-color: white;
+	position: absolute;
+	height: 20px;
+	width: 35px;
+	top: 35px;
+	right: 0px;
+}
+.modal .close{
+	z-index: 10;
+	background: url(../image/icon_close.png) no-repeat center center;
+	height: 63px;
+	width: 63px;
+	opacity: 1;
+	position: absolute;
+	top: -27px;
+	right: -30px;
+}
+.modal .close:focus{
+	border: none;
+	outline: none;
+}
+.border-bottom-right{
+	border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -ms-border-bottom-right-radius: 5px;
+    -o-border-bottom-right-radius: 5px;
+}
+.border-bottom-left{
+	border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -ms-border-bottom-left-radius: 5px;
+    -o-border-bottom-left-radius: 5px;
+}
+.margin-top-30{
+	margin-top: 30px;
+}
+
+/********************* Footer ************************/
+#footer{
+	padding: 40px 0 30px 0; 
+	height: 240px;
+	background-color: white;
+}
+#footer p{
+	line-height: 1.8;
+	
+}
+.padding{
+	padding: 0px;
+}
+.form-input{
+	height: 35px;
+}
+.footer-img img{
+	width: 36px;
+	height:auto;
+	margin-left: 5px;
+}
+.footer-img p{
+	font-size: 20px;
+}
+.footer-img{
+	float: right;
+}
+#copyright{
+	background-color: #766456;
+	height: 55px;
+}
+#copyright p{
+	font-size: 14px;
+	color: white;
+	line-height: 55px;
+}
+.enjoy{
+	color: #ef5e73;
+}
+.btn-tripopus{
+	border: 1px #e9e3d6 solid;
+	box-shadow: none;
+	height: 35px;
+	border-radius: 2px;
+	background-color:#efebde;
+	color:#9c6f4e;
+}
+.btn-tripopus:hover{
+	border-color: #e9e3d6;
+	background: #E6E2D5;
+	color:#9c6f4e;
+}
+#tripopus-social{
+	font-size: 20px;
+}
+.address p{
+	font-size: 14px;
+}
+.input-tripopus{
+	border-color: #e9e3d6 !important;
+	box-shadow: none!important;
+	border-radius: 2px!important;
+	color: #9c6f4e!important;
+	font-size: 12px!important;
+	border:1px #e9e3d6 solid;
+}
+/******************* end of footer ******************/
+
+.imageavarar{
+	width: 170px;
+	height: 170px;
+}
+.khung{
+	margin-left: 30px;
+}
+.titlepost{
+	font-size: 20px;
+}
+.updatepost{
+	margin-left: -15px;
+	padding-left: 0px;
+	/*width: ;*/
+	height: 15px;
+	font-size: 10px;
+	border: 1px solid gray;
+}
+.deletepost{
+	margin-left: 20px;
+	margin-top: -15px;
+	height: 12px;
+	width: 35px;
+	font-size: 10px;
+	border: 1px solid gray;
+}
+.padding-left-15{
+	padding-left: 15px;
+}
+.image-post-profile{
+	width: 15%;
+	height: 120px;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 15px;
+}
+.padding-15{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.button-evelope{
+	width: 110px;
+	position: absolute;
+	height: 40px;
+	top: 37px;
+	right: 207px;
+}
+.evelope{
+	font-size: 17px;
+}
+.margin-top-15{
+	margin-top: 15px;
+}
