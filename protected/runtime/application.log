@@ -3658,3 +3658,1018 @@ Stack trace:
 REQUEST_URI=/traodoidocu/index.php?r=user/admin
 in /var/www/traodoidocu/protected/controllers/UserController.php (153)
 in /var/www/traodoidocu/index.php (13)
+2015/11/19 03:09:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\xampp\htdocs\yii_framework\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\yii_framework\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii_framework\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 C:\xampp\htdocs\yii_framework\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 C:\xampp\htdocs\yii_framework\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#12 C:\xampp\htdocs\yii_framework\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(147): CListView->init()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 C:\xampp\htdocs\traodoido\protected\views\site\index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\yii_framework\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#20 C:\xampp\htdocs\traodoido\protected\controllers\SiteController.php(67): CController->render('index', Array)
+#21 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#22 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\yii_framework\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#27 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/traodoido/index.php?r=site/index&id=7
+HTTP_REFERER=http://localhost/traodoido/index.php?r=site/login
+---
+2015/11/19 09:03:27 [error] [exception.CException] exception 'CException' with message 'Property "Post.name" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php(28): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, false)
+#5 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): CWidget->render('traodoi', Array)
+#6 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#7 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): CBaseController->widget('wTraodoi')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#12 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): COutputProcessor->run()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#15 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#16 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(87): CController->render('index', Array)
+#20 [internal function]: PostController->actionTagpost('\xC4\x90\xE1\xBB\x93ng h\xE1\xBB\x93')
+#21 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#22 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#23 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#30 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('Tagpost')
+#32 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/Tagpost')
+#33 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#34 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#35 {main}
+REQUEST_URI=/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+HTTP_REFERER=http://localhost/traodoido/index.php?r=post/Tagpost&Tagpost=samsung+galaxy+s5+au
+---
+2015/11/19 09:03:55 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): wTraodoi->renderFile()
+#1 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): wTraodoi->render()
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#3 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): PostController->widget()
+#4 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): PostController->renderFile()
+#7 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): CContentDecorator->run()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): PostController->endWidget()
+#11 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): PostController->endContent()
+#12 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): PostController->renderFile()
+#15 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(87): PostController->render()
+#16 unknown(0): PostController->actionTagpost()
+#17 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#21 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#27 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#28 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+in C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php (28)
+in C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php (20)
+in C:\xampp\htdocs\traodoido\protected\views\layouts\main.php (28)
+2015/11/19 09:04:05 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): wTraodoi->renderFile()
+#1 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): wTraodoi->render()
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#3 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): PostController->widget()
+#4 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): PostController->renderFile()
+#7 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): CContentDecorator->run()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): PostController->endWidget()
+#11 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): PostController->endContent()
+#12 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): PostController->renderFile()
+#15 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(87): PostController->render()
+#16 unknown(0): PostController->actionTagpost()
+#17 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#21 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#27 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#28 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+in C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php (28)
+in C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php (20)
+in C:\xampp\htdocs\traodoido\protected\views\layouts\main.php (28)
+2015/11/19 09:04:07 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): wTraodoi->renderFile()
+#1 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): wTraodoi->render()
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#3 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): PostController->widget()
+#4 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): PostController->renderFile()
+#7 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): CContentDecorator->run()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): PostController->endWidget()
+#11 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): PostController->endContent()
+#12 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): PostController->renderFile()
+#15 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(87): PostController->render()
+#16 unknown(0): PostController->actionTagpost()
+#17 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#21 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#27 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#28 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=post/Tagpost&Tagpost=samsung+galaxy+s5+au
+in C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php (28)
+in C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php (20)
+in C:\xampp\htdocs\traodoido\protected\views\layouts\main.php (28)
+2015/11/19 09:04:39 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): wTraodoi->renderFile()
+#1 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): wTraodoi->render()
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#3 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): PostController->widget()
+#4 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): PostController->renderFile()
+#7 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): CContentDecorator->run()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): PostController->endWidget()
+#11 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): PostController->endContent()
+#12 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): PostController->renderInternal()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): PostController->renderFile()
+#15 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(87): PostController->render()
+#16 unknown(0): PostController->actionTagpost()
+#17 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#21 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#27 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#28 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+in C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php (28)
+in C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php (20)
+in C:\xampp\htdocs\traodoido\protected\views\layouts\main.php (28)
+2015/11/19 09:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewtraodoi".' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(270): CController->missingAction('viewtraodoi')
+#1 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('viewtraodoi')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/viewtraod...')
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/viewtraodoi&id=23
+HTTP_REFERER=http://localhost/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+---
+2015/11/19 09:12:22 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php(34): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, false)
+#5 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): CWidget->render('traodoi', Array)
+#6 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#7 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): CBaseController->widget('wTraodoi')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#12 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): COutputProcessor->run()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#15 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#16 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(66): CController->render('view', Array)
+#20 [internal function]: PostController->actionView('24')
+#21 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#22 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#23 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#30 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('view')
+#32 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#33 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#34 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#35 {main}
+REQUEST_URI=/traodoido/index.php?r=post/view&id=24
+HTTP_REFERER=http://localhost/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+---
+2015/11/19 09:12:34 [error] [exception.CException] exception 'CException' with message 'Property "User.namename" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('namename')
+#1 C:\xampp\htdocs\traodoido\protected\components\views\traodoi.php(34): CActiveRecord->__get('namename')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\yii_framework\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, false)
+#5 C:\xampp\htdocs\traodoido\protected\components\wTraodoi.php(20): CWidget->render('traodoi', Array)
+#6 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(181): wTraodoi->run()
+#7 C:\xampp\htdocs\traodoido\protected\views\layouts\main.php(28): CBaseController->widget('wTraodoi')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii_framework\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#12 C:\xampp\htdocs\yii_framework\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#13 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(214): COutputProcessor->run()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#15 C:\xampp\htdocs\traodoido\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#16 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(66): CController->render('view', Array)
+#20 [internal function]: PostController->actionView('24')
+#21 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#22 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#23 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#30 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('view')
+#32 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#33 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#34 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#35 {main}
+REQUEST_URI=/traodoido/index.php?r=post/view&id=24
+HTTP_REFERER=http://localhost/traodoido/index.php?r=post/Tagpost&Tagpost=%C4%90%E1%BB%93ng+h%E1%BB%93
+---
+2015/11/19 09:19:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewtraodoi".' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(270): CController->missingAction('viewtraodoi')
+#1 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('viewtraodoi')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/viewtraod...')
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/viewtraodoi&id=23
+HTTP_REFERER=http://localhost/traodoido/index.php?r=post/view&id=24
+---
+2015/11/19 09:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewtraodoi".' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(270): CController->missingAction('viewtraodoi')
+#1 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('viewtraodoi')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/viewtraod...')
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/viewtraodoi&id=23
+HTTP_REFERER=http://localhost/traodoido/index.php?r=post/view&id=24
+---
+2015/11/19 09:23:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/delete')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/delete&id=19
+HTTP_REFERER=http://localhost/traodoido/index.php?r=site/index
+---
+2015/11/19 09:26:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/delete')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/delete&id=19
+HTTP_REFERER=http://localhost/traodoido/index.php?r=site/index
+---
+2015/11/19 09:26:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/delete')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/delete&id=20
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/report/delete&id=19
+---
+2015/11/19 09:27:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/delete')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/delete&id=20
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/report/delete&id=19
+---
+2015/11/19 09:27:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/delete')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/delete&id=20
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/report/delete&id=20
+---
+2015/11/19 09:28:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/delete')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/delete&id=20
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/report/delete&id=20
+---
+2015/11/19 09:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewtraodoi".' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(270): CController->missingAction('viewtraodoi')
+#1 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('viewtraodoi')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/viewtraod...')
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/viewtraodoi&id=24
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/report/delete&id=20
+---
+2015/11/19 09:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php:170
+Stack trace:
+#0 C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php(101): ReportController->loadModel('24')
+#1 [internal function]: ReportController->actionUpdate('24')
+#2 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ReportController), Array)
+#3 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ReportController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/report/update')
+#14 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/traodoido/index.php?r=/report/update&id=24
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/viewtraodoi&id=24
+---
+2015/11/19 09:39:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('viewtraodoi')
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/viewtraod...')
+#10 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/viewtraodoi&id=24
+HTTP_REFERER=http://localhost/traodoido/index.php?r=user/profile
+---
+2015/11/19 09:50:08 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:51:06 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:51:14 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:52:36 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:52:50 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:53:27 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:54:24 [warning] [application] Failed to set unsafe attribute "message" of "Report".
+in C:\xampp\htdocs\traodoido\protected\controllers\ReportController.php (108)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 09:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "place".' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(270): CController->missingAction('place')
+#1 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=site/index
+---
+2015/11/19 09:57:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=do&limit=10&timestamp=1447923470595
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:57:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91&limit=10&timestamp=1447923473032
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:57:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng&limit=10&timestamp=1447923474593
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:57:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+ho&limit=10&timestamp=1447923475429
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:57:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93&limit=10&timestamp=1447923476554
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:58:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+c&limit=10&timestamp=1447923481727
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:58:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+cur&limit=10&timestamp=1447923482720
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:58:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+curr&limit=10&timestamp=1447923483473
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 09:58:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+curren&limit=10&timestamp=1447923484361
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:01:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91&limit=10&timestamp=1447923664289
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:01:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%C3%B4ng&limit=10&timestamp=1447923665429
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:01:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng&limit=10&timestamp=1447923666310
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:01:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+n&limit=10&timestamp=1447923667926
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:01:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+neo&limit=10&timestamp=1447923669501
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:01:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+neos&limit=10&timestamp=1447923670454
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 10:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "place".' in C:\xampp\htdocs\yii_framework\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(270): CController->missingAction('place')
+#1 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#3 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=Post/search1
+---
+2015/11/19 10:17:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=Post/search1
+---
+2015/11/19 10:25:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=site/index
+---
+2015/11/19 10:25:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=site/index
+---
+2015/11/19 10:29:22 [error] [exception.CException] exception 'CException' with message 'Property "User.author_id" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('author_id')
+#1 C:\xampp\htdocs\traodoido\protected\views\post\place.php(3): CActiveRecord->__get('author_id')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(782): CController->renderPartial('place', Array, true)
+#6 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(75): CController->render('place', Array)
+#7 [internal function]: PostController->actionPlace('3')
+#8 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#9 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#19 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#20 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=3
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/place&id=2
+---
+2015/11/19 10:29:32 [error] [exception.CException] exception 'CException' with message 'Property "User.author_id" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('author_id')
+#1 C:\xampp\htdocs\traodoido\protected\views\post\place.php(3): CActiveRecord->__get('author_id')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(782): CController->renderPartial('place', Array, true)
+#6 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(75): CController->render('place', Array)
+#7 [internal function]: PostController->actionPlace('1')
+#8 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#9 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#19 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#20 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/place&id=2
+---
+2015/11/19 10:33:19 [error] [exception.CException] exception 'CException' with message 'Property "User.author_id" is not defined.' in C:\xampp\htdocs\yii_framework\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\db\ar\CActiveRecord.php(145): CComponent->__get('author_id')
+#1 C:\xampp\htdocs\traodoido\protected\views\post\place.php(3): CActiveRecord->__get('author_id')
+#2 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii_framework\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_framework\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(782): CController->renderPartial('place', Array, true)
+#6 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(75): CController->render('place', Array)
+#7 [internal function]: PostController->actionPlace('1')
+#8 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#9 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('place')
+#19 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('/post/place')
+#20 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/place&id=2
+---
+2015/11/19 10:34:17 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\traodoido\protected\views\post\place.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(869): PostController->renderFile()
+#1 C:\xampp\htdocs\yii_framework\framework\web\CController.php(782): PostController->renderPartial()
+#2 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(75): PostController->render()
+#3 unknown(0): PostController->actionPlace()
+#4 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#15 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+in C:\xampp\htdocs\traodoido\protected\views\post\place.php (4)
+in C:\xampp\htdocs\traodoido\protected\controllers\PostController.php (75)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 10:35:25 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\traodoido\protected\views\post\place.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\CController.php(869): PostController->renderFile()
+#1 C:\xampp\htdocs\yii_framework\framework\web\CController.php(782): PostController->renderPartial()
+#2 C:\xampp\htdocs\traodoido\protected\controllers\PostController.php(75): PostController->render()
+#3 unknown(0): PostController->actionPlace()
+#4 C:\xampp\htdocs\yii_framework\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#15 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=1
+in C:\xampp\htdocs\traodoido\protected\views\post\place.php (6)
+in C:\xampp\htdocs\traodoido\protected\controllers\PostController.php (75)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 10:47:21 [error] [php] Undefined variable: place (C:\xampp\htdocs\traodoido\protected\controllers\PostController.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=2
+in C:\xampp\htdocs\traodoido\protected\controllers\PostController.php (84)
+in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 10:52:51 [error] [php] Undefined variable: place (C:\xampp\htdocs\traodoido\protected\controllers\PostController.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii_framework\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\traodoido\index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoido/index.php?r=/post/place&id=2
+in C:\xampp\htdocs\traodoido\protected\controllers\PostController.php (84)
+in C:\xampp\htdocs\traodoido\index.php (13)

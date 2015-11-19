@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Report <?php echo $model->id; ?></h1>
+<p class="danhmuc_tag">Xác nhận trao đổi</p>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form3', array('model'=>$model)); ?>

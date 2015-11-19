@@ -66,7 +66,7 @@
 	</div>
 
 	<div class="margin-left-15">
-		<p>Trạng thái</p>
+		<p>Khu vực</p>
 		<?php echo $form->dropDownList($model,'status', CHtml::listData(Place::model()->findAll(),'id','name'), array('class'=>'btn btn-default')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>

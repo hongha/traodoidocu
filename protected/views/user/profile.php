@@ -1,6 +1,8 @@
+
 <p class="danhmuc_tag">Thông tin tài khoản</p>
 <?php $i = 1;?>
 <?php foreach($criteria as  $data):?>
+	<?php  $model=Place::model()->findByPk($data->place_id);?>
 	<div class="row">
 		<div class="col-sm-3">
 			<img class="imageavarar margin-left-15" src="<?php echo Yii::app()->request->baseUrl; ?>/images/images/aa.jpg">
@@ -26,6 +28,7 @@
 			<div class="col-sm-3 nplr">Thông tin</div>
 			<div class="col-sm-9"><?php echo $data->profile; ?></div>
 			<div class="col-sm-3 nplr">Khu vực</div>
+			<div class="col-sm-9"><?php echo $model->name; ?></div>
 		</div>
 
 	</div>
@@ -39,8 +42,8 @@
 	<div class="">
 	<?php echo CHtml::link(CHtml::encode($data->title), array('/post/view', 'id'=>$data->id)); ?>
 	</div>
-	<a  href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/post/update&id=<?php echo $data->id?>" role="button"><button class="margin-top-15 btn btn-warning">update</button></a>
-	<a  href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/post/delete&id=<?php echo $data->id?>" role="button"><button class="margin-top-15 btn btn-danger">delete</button></a>
+	<a  href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/post/update&id=<?php echo $data->id;?>" role="button"><button class="margin-top-15 btn btn-warning">update</button></a>
+	<a  href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=/post/delete&id=<?php echo $data->id;?>" role="button"><button class="margin-top-15 btn btn-danger">delete</button></a>
 	<hr>
 <?php endforeach;?>	
 <?php ?>

@@ -50,6 +50,7 @@ class UserController extends Controller
 		$criteria->compare('id',$iduser);
 		$criteria=User::model()->findAll($criteria);
 
+
 		
 		// $iduser = Yii::app()->User->id;
 		$criteria1=new CDbCriteria ();

@@ -3,7 +3,6 @@
 	<p class="category"><?php echo $data->name; ?></p>
 	</a>  -->
 	<a href="<?php echo Yii::app()->createUrl('post/Tagpost',array('Tagpost'=>$data->name));?>" >
-        <?php echo $data->name;?>
+        <p class="category"><?php echo $data->name;?></p>
     </a> 
-    <?php echo "</br>";?>
 <?php endforeach;?>

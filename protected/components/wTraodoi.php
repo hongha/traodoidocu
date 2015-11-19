@@ -13,7 +13,8 @@ class wTraodoi extends CWidget
 		$criteria->compare('id_user',$id);
 		$criteria->compare('status','0');
 		$criteria->order = 'id desc';
-		$list = Report::model()->findAll($criteria);		
+		$list = Report::model()->findAll($criteria);	
+	
 		$this->render('traodoi', array(
 			'list'=>$list,			
 		));

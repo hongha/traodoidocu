@@ -28,11 +28,11 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to access 'index' and 'view' actions.
-				'actions'=>array('index','view','search','search1','tagpost'),
+				'actions'=>array('index','view','search','search1','tagpost','place'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated users to access all actions
-				'actions'=>array('create','update','delete','postprofile'),
+				'actions'=>array('create','update','delete','postprofile','viewtraodoi'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -63,9 +63,27 @@ class PostController extends Controller
 	{
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+
 		));
 	}
+	public function actionPlace($id){
+		$criteria = new CDbCriteria();
+		$criteria->compare('place_id',$id);
+		$criteria=User::model()->findAll($criteria);
 
+
+		foreach($criteria as $data){
+			$place=new CDbCriteria();
+			$place->compare('author_id',$data->id);
+			$place=Post::model()->findAll($place);
+		}
+
+
+		$this->render('place', array(
+			'criteria'=>$criteria,	
+			'place'=>$place,			
+		));
+	}
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -87,7 +105,12 @@ class PostController extends Controller
 			));
 	
 	}
-
+	public function actionViewtraodoi($id,$idreport){
+		$this->render('viewtraodoi',array(
+			'model'=>$this->loadModel($id),
+			'idreport'=>$idreport,
+		));
+	}
 	public function actionCreate()
 	{
 		$model=new Post;
