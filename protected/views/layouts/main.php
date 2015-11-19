@@ -63,6 +63,38 @@
 	
 
 	<?php echo $content; ?>
+	<!--like button facebook-->
+	
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.3&appId=919055684783017";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<!--end like button-->
+
+	<!--comment facebook-->
+	
+		<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.3&appId=919055684783017";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!--end comment facebook-->
+
+
+	<div class="fb-like" data-href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>" data-width="445" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+	<!--luu comments cho tung trang web-->
+	<div class="fb-comments facebook" data-href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>" data-width="905" data-numposts="10" data-colorscheme="light">
+	</div>		
+
+
 </div>
 
 	
@@ -71,7 +103,7 @@
 
 </div><!-- page -->
 
-<div id="footer">
+<div id="footer" class=" margin-top-15">
 	<div class="container">
 		<div class="row">
             <div class="col-md-4">
@@ -118,5 +150,6 @@
 		<center><p id="right-reserved">© 2015 - All Rights Reserved</p></center>
 	</div>
 </div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f171b421b5051" async="async"></script>
 </body>
 </html>

@@ -284,3 +284,4 @@
 .margin-top-15{
 	margin-top: 15px;
 }
+.fb-comments, .fb-comments span, .fb-comments iframe { width: 100% !important; }

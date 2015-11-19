@@ -4727,3 +4727,581 @@ Stack trace:
 REQUEST_URI=/traodoido/index.php?r=/post/place&id=4
 in C:\xampp\htdocs\traodoido\protected\controllers\PostController.php (84)
 in C:\xampp\htdocs\traodoido\index.php (13)
+2015/11/19 12:09:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=app&limit=10&timestamp=1447931349419
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:09:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=apple&limit=10&timestamp=1447931350384
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:09:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=apple&limit=10&timestamp=1447931352278
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:09:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=apple+ipad&limit=10&timestamp=1447931353534
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:09:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=apple+ipad+mini&limit=10&timestamp=1447931354947
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:09:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=apple+ipad+mini+2&limit=10&timestamp=1447931356075
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:09:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=apple+ipad+mini+3&limit=10&timestamp=1447931356763
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:12:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=gi%C3%A0y&limit=10&timestamp=1447931533654
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:12:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=gi%C3%A0y+a&limit=10&timestamp=1447931534776
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:12:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=gi%C3%A0y+aqua&limit=10&timestamp=1447931536323
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:12:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=gi%C3%A0y+aqua+h%E1%BB%8Dc+sinh&limit=10&timestamp=1447931539008
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:15:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=kinh&limit=10&timestamp=1447931748125
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:15:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=kinh&limit=10&timestamp=1447931749310
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:15:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%C4%83&limit=10&timestamp=1447931753315
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:15:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt&limit=10&timestamp=1447931754228
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:16:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt+n%C6%B0a&limit=10&timestamp=1447931764685
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:16:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt+n%C6%B0&limit=10&timestamp=1447931765164
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:16:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt+n%E1%BB%AF&limit=10&timestamp=1447931765942
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:16:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt+n%E1%BB%AF+j&limit=10&timestamp=1447931766775
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:16:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt+n%E1%BB%AF+ju&limit=10&timestamp=1447931767371
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:16:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=k%C3%ADnh+m%E1%BA%AFt+n%E1%BB%AF+jubilant&limit=10&timestamp=1447931772301
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:18:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%C3%B4&limit=10&timestamp=1447931923353
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:18:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%C3%B4&limit=10&timestamp=1447931925049
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:18:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BB%93ng+h%E1%BB%93+gia+b%E1%BA%A3o&limit=10&timestamp=1447931928094
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:20:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91am&limit=10&timestamp=1447932009368
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:20:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BA%A7m&limit=10&timestamp=1447932010559
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:20:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BA%A7m+body&limit=10&timestamp=1447932012150
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=d&limit=10&timestamp=1447932132168
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91&limit=10&timestamp=1447932134645
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%C3%A2&limit=10&timestamp=1447932139261
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BA%A7m&limit=10&timestamp=1447932140628
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BA%A7m+b&limit=10&timestamp=1447932141185
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BA%A7m&limit=10&timestamp=1447932142379
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
+2015/11/19 12:22:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii_framework\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_framework\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_framework\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_framework\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_framework\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_framework\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(282): CController->run('suggestTags')
+#8 C:\xampp\htdocs\yii_framework\framework\web\CWebApplication.php(141): CWebApplication->runController('post/suggestTag...')
+#9 C:\xampp\htdocs\yii_framework\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\traodoido\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/traodoido/index.php?r=post/suggestTags&q=%C4%91%E1%BA%A7m+body&limit=10&timestamp=1447932146035
+HTTP_REFERER=http://localhost/traodoido/index.php?r=/post/create
+---
