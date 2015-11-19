@@ -30,7 +30,8 @@ echo $model->content;
 </span>
 <span class="post-time">
 <?php
-echo $model->create_time;
+echo date('d/m/Y',$model->create_time);
+// chay thu xem
  ?>
  </span>
  <br/>
