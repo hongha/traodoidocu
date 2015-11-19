@@ -3272,3 +3272,389 @@ Stack trace:
 REQUEST_URI=/traodoido/index.php?r=user/create
 HTTP_REFERER=http://localhost/traodoido/index.php
 ---
+2015/11/19 08:30:02 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:34 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:35 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:36 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:36 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:37 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:37 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:37 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:30:38 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/traodoidocu/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/traodo...')
+#1 /var/www/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/yii_framework/framework/zii/widgets/CListView.php(217): CAssetManager->publish('/var/www/yii_fr...')
+#3 /var/www/yii_framework/framework/web/CBaseController.php(147): CListView->init()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 /var/www/traodoidocu/protected/views/site/index.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/traodo...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/traodo...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/traodo...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/traodoidocu/protected/controllers/SiteController.php(67): CController->render('index', Array)
+#11 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/traodoidocu/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/traodoidocu/index.php
+---
+2015/11/19 08:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "place".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('place')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('place')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('/post/place')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=/post/place&id=1
+HTTP_REFERER=http://localhost/traodoidocu/index.php?r=site/login
+---
+2015/11/19 08:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "place".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('place')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('place')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('/post/place')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=/post/place&id=2
+HTTP_REFERER=http://localhost/traodoidocu/index.php?r=/post/place&id=1
+---
+2015/11/19 08:34:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "place".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('place')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('place')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('/post/place')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=/post/place&id=3
+HTTP_REFERER=http://localhost/traodoidocu/index.php?r=/post/place&id=2
+---
+2015/11/19 08:34:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "place".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('place')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('place')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('/post/place')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=/post/place&id=4
+HTTP_REFERER=http://localhost/traodoidocu/index.php?r=/post/place&id=3
+---
+2015/11/19 08:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=site/admin
+---
+2015/11/19 08:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=site/admin
+---
+2015/11/19 08:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=site/admin
+---
+2015/11/19 08:57:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=site/admin
+---
+2015/11/19 08:58:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/traodoidocu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/traodoidocu/index.php?r=site/admin
+---
+2015/11/19 08:58:22 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user_type" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CWebUser.php(146): CComponent->__get('user_type')
+#1 /var/www/traodoidocu/protected/controllers/UserController.php(151): CWebUser->__get('user_type')
+#2 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): UserController->actionAdmin()
+#3 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#13 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/traodoidocu/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/traodoidocu/index.php?r=user/admin
+---
+2015/11/19 08:59:52 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user_type" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CWebUser.php(146): CComponent->__get('user_type')
+#1 /var/www/traodoidocu/protected/controllers/UserController.php(151): CWebUser->__get('user_type')
+#2 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): UserController->actionAdmin()
+#3 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#13 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/traodoidocu/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/traodoidocu/index.php?r=user/admin
+---
+2015/11/19 08:59:53 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.user_type" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CWebUser.php(146): CComponent->__get('user_type')
+#1 /var/www/traodoidocu/protected/controllers/UserController.php(151): CWebUser->__get('user_type')
+#2 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): UserController->actionAdmin()
+#3 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#13 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/traodoidocu/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/traodoidocu/index.php?r=user/admin
+---
+2015/11/19 09:01:14 [error] [php] Undefined variable: id (/var/www/traodoidocu/protected/controllers/UserController.php:153)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): UserController->runActionWithFilters()
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): UserController->run()
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii_framework/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/traodoidocu/index.php(13): CWebApplication->run()
+REQUEST_URI=/traodoidocu/index.php?r=user/admin
+in /var/www/traodoidocu/protected/controllers/UserController.php (153)
+in /var/www/traodoidocu/index.php (13)

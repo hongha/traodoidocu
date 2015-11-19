@@ -148,14 +148,21 @@ class UserController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new User('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['User']))
-			$model->attributes=$_GET['User'];
+		
+		$iduser = Yii::app()->User->id;
+		$model = User::model()->findByPk($iduser);
+		$quyen = $model->user_type;
+		if ($quyen == 1) {
+			
+			$model=new User('search');
+			$model->unsetAttributes();  // clear any default values
+			if(isset($_GET['User']))
+				$model->attributes=$_GET['User'];
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
+			$this->render('admin',array(
+				'model'=>$model,
+			));
+		}
 	}
 
 	/**

@@ -3,8 +3,8 @@ return array (
   'template' => 'default',
   'connectionId' => 'db',
   'tablePrefix' => 'tbl_',
-  'modelPath' => 'application.models',
+  'modelPath' => 'application.modules.models',
   'baseClass' => 'CActiveRecord',
-  'buildRelations' => '1',
+  'buildRelations' => '0',
   'commentsAsLabels' => '0',
 );
