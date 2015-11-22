@@ -51,7 +51,7 @@
 
 	<div class=" margin-left-15">
 		<p>Khu vực sống</p>
-		<?php echo $form->textField($model,'place_id',array('class'=>'form-control input-traodoi')); ?>
+		<?php echo $form->dropDownList($model,'place_id', CHtml::listData(Place::model()->findAll(),'id','name'),array('class'=>'form-control input-traodoi')); ?>
 		<?php echo $form->error($model,'place_id'); ?>
 	</div>
 

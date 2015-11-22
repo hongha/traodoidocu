@@ -87,7 +87,7 @@ class UserController extends Controller
 			$password=$_POST['User']['password'];
 			$model->password = md5($password);
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('/site/login'));
 		}
 
 		$this->render('create',array(
